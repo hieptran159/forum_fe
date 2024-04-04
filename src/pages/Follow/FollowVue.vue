@@ -40,7 +40,7 @@ const getListFolloww = async() => {
         await getDataUser(data?.data.data.userId);
         console.log(listFollow.value);
     } catch (error) {
-        
+        console.log(error);
     }
 }
 
