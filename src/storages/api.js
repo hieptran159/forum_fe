@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import { LOCALKEYS, getItemLocal } from './localStorage';
 
-const BASE_URL = "https://forum.didan.id.vn/";
+const BASE_URL = "http://forum.didan.id.vn/";
 
 /**
  * Khởi tạo cách truyền và xử lí Rest-API
