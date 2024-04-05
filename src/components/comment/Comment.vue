@@ -70,11 +70,12 @@ const comment = ref(props.commentProps);
 const userComments = ref();
 const linkAvt = ref();
 const imageLoaded = ref(false);
+const showDialog = inject("openDialogError");
 
 const getDataUser = async() => {
     const data = await getUserInfo(comment.value?.userComments);
     userComments.value = data?.data?.data?.fullName;
-    linkAvt.value = "http://localhost:8081/images/" + data?.data?.data?.avtUrl;
+    linkAvt.value = "http://forum.didan.id.vn/" + data?.data?.data?.avtUrl;
 }
 
 const handleImageLoad = () => {
@@ -92,6 +93,7 @@ const likePost = async() => {
 const unLikePost = async() => {
     try {
         await unLikeCommentApi(comment.value.commentId);
+        await get
     } catch (error) {
         console.log(error);
     }
