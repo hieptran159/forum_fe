@@ -1,4 +1,5 @@
 # HIP_FORUM
+This project about forum fe - OOP 2023-2034
 
 This template should help get you started developing with Vue 3 in Vite.
 
